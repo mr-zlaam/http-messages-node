@@ -42,11 +42,15 @@ bun add reshttp
 import express from "express";
 import reshttp from "reshttp";
 
+
+console.log(reshttp.okMessage)
+console.log(reshttp.okCode)
+
 const app = express();
-console.log(reshttp.OK) // 200
+
 app.get("/example", (req, res) => {
   if (!req.query.id) {
-    return res.status(reshttp.badRequestCode).send(reshttp.badRequestMessage);
+    return res.status(reshttp.badRequestCode).json({status: reshttp.badRequestCode, message: reshttp.badRequestMessage});
   }
   res.status(reshttp.okCode).send(reshttp.okMessage);
 });
@@ -107,6 +111,7 @@ In this example:
 | `409`    | Conflict: The request could not be processed due to a conflict with the current state of the resource. |
 | `410`    | Gone: The requested resource is no longer available on the server.         |
 | `411`    | Length Required: The server requires a Content-Length header field in the request. |
+| `418`    | I'm a Teapot: The server is a teapot and is not able to brew coffee. |
 | `429`    | Too Many Requests: The client has sent too many requests in a given amount of time. |
 
 ## Server Error Responses (5xx)

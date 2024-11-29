@@ -63,7 +63,7 @@ const reshttp = {
   lengthRequiredCode: 411,
   lengthRequiredMessage: "The server requires a Content-Length header field in the request.",
   iamATeapotCode: 418,
-  iamATeapotMessage: "I'm a teapot.",
+  iamATeapotMessage: "| I'm a Teapot: The server is a teapot and is not able to brew coffee.",
   tooManyRequestsCode: 429,
   tooManyRequestsMessage: "The client has sent too many requests in a given amount of time.",
 

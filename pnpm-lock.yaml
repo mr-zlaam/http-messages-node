@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      node-http-message:
-        specifier: file:node-http-message-2.0.2.tgz
-        version: file:node-http-message-2.0.2.tgz
+      reshttp:
+        specifier: file:reshttp-2.0.2.tgz
+        version: file:reshttp-2.0.2.tgz
     devDependencies:
       '@types/node':
         specifier: ^22.10.1
@@ -24,10 +24,10 @@ packages:
   '@types/node@22.10.1':
     resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
 
-  node-http-message@file:node-http-message-2.0.2.tgz:
-    resolution: {integrity: sha512-WfuW55Nt44ijkZ6m182wLqiThHKWuoBJakn5PhchSTAKPqw7CHFFMmHkh6bmOGGUQTFBShryPhBFXvLwkp187A==, tarball: file:node-http-message-2.0.2.tgz}
+  reshttp@file:reshttp-2.0.2.tgz:
+    resolution: {integrity: sha512-m9zI6ocrMpNE/afiHy2WauuwswtRjEQ55P2tsPHiS+sdHhEp7tCrbIrV9bBVLi9mCYq9UKYmq6mLKvhq44uflA==, tarball: file:reshttp-2.0.2.tgz}
     version: 2.0.2
-    engines: {node: '>= 20'}
+    engines: {node: '>= 16'}
 
   typescript@5.7.2:
     resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
@@ -43,7 +43,7 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  node-http-message@file:node-http-message-2.0.2.tgz: {}
+  reshttp@file:reshttp-2.0.2.tgz: {}
 
   typescript@5.7.2: {}
 
