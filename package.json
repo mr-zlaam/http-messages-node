@@ -1,24 +1,30 @@
 {
-  "name": "node-http-message",
-  "description": "create http messages for node express app",
+  "name": "reshttp",
   "version": "2.0.2",
-  "main": "./dist/message.js",
-  "types": "./dist/message.d.ts",
+  "description": "A package to create and manage HTTP status messages for Node.js Express applications.",
+  "main": "./dist/reshttp.js",
+  "types": "./dist/reshttp.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "build": "rm -rf dist && tsc --build",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [
-    "https-message",
+    "http-messages",
     "node",
     "express",
-    "node-https-messages"
+    "reshttp",
+    "api",
+    "http-status",
+    "nodejs"
   ],
   "author": "mr-zlaam",
-  "repository": "https://github.com/mr-zlaam/http-messages-node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mr-zlaam/reshttp"
+  },
   "engines": {
-    "node": ">= 20"
+    "node": ">= 16"
   },
   "license": "MIT",
   "devDependencies": {
@@ -26,13 +32,20 @@
     "typescript": "^5.7.2"
   },
   "contributors": [
-    "zlaam <zlaam.dev@gmail.com>"
+    "mr-zlaam <zlaam.dev@gmail.com>"
   ],
   "files": [
     "dist/",
     "README.md"
   ],
-  "dependencies": {
-    "node-http-message": "file:node-http-message-2.0.2.tgz"
-  }
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/mr-zlaam/reshttp/issues"
+  },
+  "homepage": "https://github.com/mr-zlaam/reshttp#readme",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/mr-zlaam"
+  },
+  "private": false
 }
