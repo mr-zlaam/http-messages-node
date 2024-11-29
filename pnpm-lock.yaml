@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      node-http-message:
+        specifier: ^2.0.2
+        version: 2.0.2
     devDependencies:
       '@types/node':
         specifier: ^22.10.1
@@ -19,6 +23,10 @@ packages:
 
   '@types/node@22.10.1':
     resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
+
+  node-http-message@2.0.2:
+    resolution: {integrity: sha512-HhyjtN7Ifps7bGuBcqLmSpznuNjQaFlSDfoW9XqM/D+WkVnGDVRKeF6A6LvzS4viNqg1egoPKpstE2ZHffcu0A==}
+    engines: {node: '>= 20'}
 
   typescript@5.7.2:
     resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
@@ -33,6 +41,8 @@ snapshots:
   '@types/node@22.10.1':
     dependencies:
       undici-types: 6.20.0
+
+  node-http-message@2.0.2: {}
 
   typescript@5.7.2: {}
 

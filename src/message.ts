@@ -47,4 +47,5 @@ const messages = {
   GOODBYE: "Thank you for using our service."
 };
 export default messages
+export { messages }
 export type MessageKey = keyof typeof messages;
