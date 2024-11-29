@@ -1,7 +1,7 @@
 {
   "name": "node-http-message",
   "description": "create http messages for node express app",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "main": "dist/messages.js",
   "types": "types/messages.d.ts",
   "scripts": {
