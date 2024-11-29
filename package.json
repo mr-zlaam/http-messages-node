@@ -1,18 +1,30 @@
 {
   "name": "node-http-message",
-  "version": "1.0.0",
-  "description": "",
+  "description": "create http messages for node express app",
+  "version": "1.0.1",
   "main": "dist/messages.js",
   "types": "types/messages.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "https-message",
+    "node",
+    "express",
+    "node-https-messages"
+  ],
+  "author": "mr-zlaam",
+  "repository": "https://github.com/mr-zlaam/http-messages-node",
+  "engines": {
+    "node": ">= 20"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.10.1",
     "typescript": "^5.7.2"
-  }
+  },
+  "contributors": [
+    "zlaam <zlaam.dev@gmail.com>"
+  ]
 }
