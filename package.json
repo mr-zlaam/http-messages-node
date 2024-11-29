@@ -2,8 +2,9 @@
   "name": "node-http-message",
   "description": "create http messages for node express app",
   "version": "2.0.2",
-  "main": "dist/message.js",
-  "types": "dist/messages.d.ts",
+  "main": "./dist/message.js",
+  "types": "./dist/message.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
@@ -27,7 +28,11 @@
   "contributors": [
     "zlaam <zlaam.dev@gmail.com>"
   ],
+  "files": [
+    "dist/",
+    "README.md"
+  ],
   "dependencies": {
-    "node-http-message": "^2.0.2"
+    "node-http-message": "file:node-http-message-2.0.2.tgz"
   }
 }
